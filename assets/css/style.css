@@ -1,11 +1,11 @@
 :root{
-  --lavender:#9785a3;--lavender-dark:#745f80;--lavender-soft:#ddd1e2;
-  --sage:#a9b39a;--sage-dark:#748168;--sage-soft:#dfe5d7;
-  --gold:#c6a764;--gold-dark:#9d8047;--gold-soft:#eee1bf;
+  --lavender:#a88eaa;--lavender-dark:#816b86;--lavender-soft:#e7dbe5;
+  --sage:#9c9989;--sage-dark:#777565;--sage-soft:#e4e4d8;
+  --gold:#c5aa72;--gold-dark:#9d8254;--gold-soft:#eee2c8;
   --rose:#cdb8c5;--rose-dark:#9e7d91;
-  --cream:#fbf6ea;--cream-2:#f4eee2;--paper:#fffdf8;
-  --ink:#57544d;--heading:#67566e;--muted:#79766f;--line:#e5ddd0;
-  --shadow:0 18px 50px rgba(95,79,101,.10);--max:1180px
+  --cream:#f7efe4;--cream-2:#f3ebdf;--paper:#fffaf3;
+  --ink:#605b54;--heading:#816b86;--muted:#77716b;--line:#e3d8ca;
+  --shadow:0 18px 50px rgba(129,107,134,.10);--max:1180px
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -225,4 +225,81 @@ h3{font-size:29px}
   .meta-list{grid-template-columns:1fr}.event-card{grid-template-columns:1fr;gap:15px}.event-card>a{grid-column:1}
   .event-date strong{font-size:48px}.founder-visual,.profile-portrait{min-height:450px}
   .contact-panel,.contact-card{padding:30px}
+}
+
+/* Identidade oficial Saberes da Vida */
+.brand{min-width:265px;gap:12px}
+.brand-logo-crop{
+  position:relative;
+  width:58px;
+  height:58px;
+  flex:0 0 58px;
+  overflow:hidden;
+  border-radius:50%;
+  background:#f7efe4;
+}
+.brand-logo-image{
+  position:absolute;
+  width:82px;
+  height:82px;
+  max-width:none;
+  left:-12px;
+  top:-5px;
+  object-fit:cover;
+}
+.brand-wordmark{display:flex;flex-direction:column;line-height:.92}
+.brand-wordmark small,
+.brand-wordmark em{
+  font-family:Nunito,sans-serif;
+  font-style:normal;
+  font-size:7px;
+  text-transform:uppercase;
+  letter-spacing:.25em;
+  color:var(--sage-dark);
+  font-weight:700;
+}
+.brand-wordmark strong{
+  font-family:"Cormorant Garamond",serif;
+  font-size:28px;
+  font-weight:500;
+  color:var(--lavender-dark);
+  margin:4px 0;
+}
+
+.official-logo-card{
+  background:#f7efe4;
+  padding:28px;
+  min-height:565px;
+}
+.official-logo-card::before,
+.official-logo-card::after{display:none}
+.hero-official-logo{
+  position:relative;
+  z-index:2;
+  width:min(100%,470px);
+  height:auto;
+  border-radius:28px;
+  box-shadow:0 18px 50px rgba(129,107,134,.08);
+}
+
+.story-logo{
+  width:min(82%,360px);
+  height:auto;
+  border-radius:24px;
+}
+.contact-logo{
+  width:min(88%,300px);
+  height:auto;
+  border-radius:22px;
+  margin-bottom:8px;
+}
+
+@media(max-width:640px){
+  .brand{min-width:0;gap:8px}
+  .brand-logo-crop{width:48px;height:48px;flex-basis:48px}
+  .brand-logo-image{width:68px;height:68px;left:-10px;top:-4px}
+  .brand-wordmark strong{font-size:21px}
+  .brand-wordmark small,.brand-wordmark em{font-size:6px;letter-spacing:.18em}
+  .official-logo-card{min-height:auto;padding:18px}
+  .hero-official-logo{width:100%;border-radius:20px}
 }
