@@ -1,31 +1,41 @@
-# Danielle Marques — site demonstrativo
+# Escola Saberes da Vida — site demonstrativo
 
-Base estática para apresentação do site de Danielle Marques.
+Base estática para apresentação do site da **Escola Saberes da Vida**.
+
+## Identidade
+
+A versão atual segue a identidade visual da marca enviada como referência:
+
+- creme / off-white
+- lilás
+- verde sálvia
+- dourado suave
+- formas orgânicas e elementos inspirados em crescimento, raízes e conexão
 
 ## Estrutura
 
-- index.html — landing page
-- artigos.html — listagem demonstrativa de artigos
+- index.html — página inicial
+- sobre.html — a Escola + Danielle Marques
+- cursos.html — cursos, formações e trilhas
+- artigos.html — artigos
 - livros.html — livros e publicações
-- eventos.html — agenda e participações
-- sobre.html — perfil e trajetória
+- eventos.html — agenda
+- contato.html — contato
 - assets/css/style.css — identidade visual e responsividade
 - assets/js/main.js — navegação mobile
 
 ## GitHub Pages
 
-O projeto foi preparado para funcionar diretamente no GitHub Pages, sem build.
+Publicação direta pela branch principal:
 
-No repositório, abra Settings > Pages e selecione:
+- Source: Deploy from a branch
+- Branch: main
+- Folder: / (root)
 
-Deploy from a branch  
-Branch: main  
-Folder: / (root)
-
-Após a publicação, a URL padrão será:
+URL padrão:
 
 https://becero.github.io/blogmarques/
 
-## Observação
+## Próxima etapa
 
-Esta é uma base estática para validação visual. A versão final com painel de administração para Danielle publicar artigos e livros deverá usar WordPress ou outro CMS.
+Esta é uma base estática de validação visual. A versão final será adaptada para WordPress na hospedagem Locaweb, permitindo administrar cursos, artigos, livros e eventos pelo painel.
